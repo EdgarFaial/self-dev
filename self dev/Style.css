@@ -1,0 +1,131 @@
+body {
+  background-image: linear-gradient(to top, rgb(6, 11, 73) 1%, rgb(0, 0, 0) 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(7, 70, 124, 0.251);
+  width: 70%;
+  max-width: 800px;
+  min-height: 300px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px rgba(163, 146, 228, 0.301);
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  font-size: xx-large;
+  text-shadow: 0 0 30px rgb(0, 238, 255);
+  outline: rgba(255, 255, 255, 0.247) solid 1px;
+}
+
+.container h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#itemInput {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 238, 255, 0.3);
+  border-radius: 4px;
+  color: white;
+  outline: none;
+  transition: all 0.3s;
+}
+
+#itemInput:focus {
+  border-color: rgb(0, 238, 255);
+  box-shadow: 0 0 10px rgba(0, 238, 255, 0.5);
+}
+
+#itemInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#addBtn {
+  padding: 12px 25px;
+  background-color: rgba(0, 119, 255, 0.3);
+  color: white;
+  border: 1px solid rgba(0, 238, 255, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s;
+  text-shadow: 0 0 10px rgb(0, 238, 255);
+}
+
+#addBtn:hover {
+  background-color: rgba(0, 119, 255, 0.5);
+  border-color: rgb(0, 238, 255);
+  box-shadow: 0 0 15px rgba(0, 238, 255, 0.7);
+}
+
+#checklist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#checklist li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(0, 30, 60, 0.3);
+  border: 1px solid rgba(0, 238, 255, 0.2);
+  border-radius: 4px;
+  font-size: 22px;
+  transition: all 0.3s;
+}
+
+#checklist li:hover {
+  background-color: rgba(0, 30, 60, 0.5);
+  border-color: rgba(0, 238, 255, 0.4);
+}
+
+#checklist li input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  accent-color: rgb(0, 238, 255);
+}
+
+#checklist li span {
+  flex: 1;
+  color: white;
+  text-shadow: 0 0 15px rgb(0, 238, 255);
+}
+
+#checklist li.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+  background-color: rgba(0, 60, 30, 0.3);
+  border-color: rgba(0, 255, 85, 0.2);
+}
+
+.empty-message {
+  text-align: center;
+  padding: 30px;
+  color: rgba(255, 255, 255, 0.226);
+  font-style: italic;
+  font-size: 12px;
+  text-shadow: 0 0 10px rgba(0, 238, 255, 0.473);
+}
